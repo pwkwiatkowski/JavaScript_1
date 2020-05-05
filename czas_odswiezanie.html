@@ -1,0 +1,20 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>JavaScript</title>
+<script type="text/javascript">
+function ok()
+{
+	var data = new Date();
+	var data1 = data.toLocaleTimeString();
+	document.getElementById("czas").innerHTML = "Godzina: " + data1;
+	setTimeout('ok()',1000);
+}
+</script>
+</head>
+<body>
+<h2 id="czas" style="border: 2px blue solid; width: 110px; text-align: center; position: fixed; top: 10px; right: 60px;"></h2>
+<script>ok()</script>
+</body>
+</html>
